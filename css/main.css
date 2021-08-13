@@ -24,10 +24,6 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  box-shadow: 0 0 10px var(--black-blue);
-}
-
 /*WHEN PAGE IS LOADED*/
 #loading {
   width: 100%;
