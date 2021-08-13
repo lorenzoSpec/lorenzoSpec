@@ -20,6 +20,14 @@
   --white: #E4E4E4; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  box-shadow: 0 0 10px var(--black-blue);
+}
+
 /*WHEN PAGE IS LOADED*/
 #loading {
   width: 100%;
@@ -50,6 +58,8 @@
   }
 }
 
+
+
 /*HEAD SECTION*/ 
 #head-section {
   min-width: 360px;
@@ -58,7 +68,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
@@ -69,28 +79,65 @@
   justify-content: center;
   align-items: flex-start;
   font-family: 'Poppins', sans-serif;
-  margin: 0 0 70px 20px;
+  margin: 0 0 70px 0;
   transform: translateY(100%);
 }
 
+
+/*  GREETINGS STYLE */
 #text-div p {
   color: var(--white);
   font-size: 32px;
   font-weight: bold;
-  opacity: 0.4;
+  opacity: 0;
   text-shadow: 5px 5px 5px #000000;
   line-height: 33px;
   margin-left: 10px;
 }
 
+.greetAnm{
+  animation: anmGreet 0.5s ease 1.7s forwards;
+}
+
+@keyframes anmGreet {
+  from {
+    transform: translateX(-50%)
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 0.4;
+  }
+}
+
+
+/*  JOHN ERWIN MY NAME STYLE */
 #text-div h1 {
   color: var(--white);
   font-size: 55px;
   font-weight: bold;
   text-shadow: 5px 5px 10px #000000;
   line-height: 55px;
+  opacity: 0;
 }
 
+.nameAnm {
+  animation: anmName 0.5s ease 1.5s forwards;
+}
+
+@keyframes anmName {
+  from {
+    transform: translateX(-50%)
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* CONTACT ME STYLE */
 #text-div button {
   background-color: var(--blue);
   color: var(--white);
@@ -102,17 +149,54 @@
   padding: 10px 20px;
   margin: 8px 0;
   box-shadow: 0px 2px 2px #000000;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#text-div button:hover {
+  transform: scale(1.01);
+  background-color: var(--mid-dark-blue);
+}
+
+.contactmeAnm {
+  animation: anmContactme 0.1s linear 2.3s forwards;
+}
+
+@keyframes anmContactme {
+  to {
+    opacity: 1;
+  }
 }
 
 
+/* LOGO STYLE */
 #je-logo {
   width: 40px;
   position: absolute;
   top: 20px;
   left: 20px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#je-logo:hover {
+  transform: scale(1.1);
+}
+
+.logoheroAnm {
+  animation: anmLogohero 1s linear 2.4s forwards;
+}
+
+@keyframes anmLogohero {
+  to {
+    opacity: 1;
+  }
 }
 
 
+/* NAVIGATION STYLE */
 #nav-in-hero {
   display: flex;
   flex-flow: row nowrap;
@@ -122,6 +206,7 @@
   right: 20px;
   top: 50px;
   transform: rotate(90deg) translate(50%, -500%);
+  opacity: 0;
 }
 
 #nav-in-hero a {
@@ -132,15 +217,22 @@
   text-decoration: none;
   margin: 0 8px;
   opacity: 0.8;
+  transition: all 0.1s linear;
 }
 
+#nav-in-hero a:hover {
+  opacity: 1;
+  transform: scale(1.1) ;
+}
+
+
+/* DESIGN IN BACKGROUND */
 #big-triagle {
   width: 200px;
   position: absolute;
   top: 0;
   right: 0;
 }
-
 
 #small-triagle {
   width: 30px;
@@ -149,13 +241,13 @@
   left: 0;
 }
 
-
 #creative-bg {
   width: 300px;
   position: absolute;
   bottom: 0;
   right: 0;
   transform: translateY(20%);
+  opacity: 0;
 }
 
 /*TABLET SCREEN*/
@@ -181,6 +273,15 @@
 
   #creative-bg {
     width: 500px;
+  }
+
+  #big-triagle {
+    width: 250px;
+  }
+  
+  
+  #small-triagle {
+    width: 40px;
   }
 }
 
@@ -222,4 +323,71 @@
   #nav-in-hero a {
     font-size: 16px;
   }
+
+  #big-triagle {
+    width: 300px;
+  }
+  
+  #small-triagle {
+    width: 50px;
+  }
+  
+}
+
+
+/*DESKTOP SCREEN*/
+@media (min-width: 1921px) {
+
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #head-section {
+    min-width: 1921px;
+    max-width: 1921px;
+    align-items: center;
+  }
+
+  #text-div {
+    transform: translate(-40%, 20%);
+  }
+
+  #text-div p {
+    font-size: 52px;
+    line-height: 52px;
+  }
+  
+  #text-div h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  
+  #text-div button {
+    font-size: 20px;
+  }
+
+  #creative-bg {
+    width: 800px;
+  }
+
+  #nav-in-hero {
+    top: 60px;
+    transform: rotate(90deg) translate(50%, -450%);
+  }
+  
+  #nav-in-hero a {
+    font-size: 16px;
+  }
+
+  #big-triagle {
+    width: 300px;
+  }
+  
+  #small-triagle {
+    width: 50px;
+  }
+  
 }
