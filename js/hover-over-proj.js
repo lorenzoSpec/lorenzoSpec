@@ -1,4 +1,4 @@
-const PROJECTDIV = document.querySelectorAll('.project-div-indv');
+/*const PROJECTDIV = document.querySelectorAll('.project-div-indv');
 
 function projectdivAddEvents(){
   PROJECTDIV.forEach( x => {
@@ -19,4 +19,4 @@ function addClass(el){
   console.log(div.classList.add('show-blur'));
 }
 
-export { projectdivAddEvents };
+export { projectdivAddEvents };*/
