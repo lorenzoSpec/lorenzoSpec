@@ -1,5 +1,5 @@
 import { animateAbout } from './animation.js';
-import { projectdivAddEvents } from './hover-over-proj.js'
+//import { projectdivAddEvents } from './hover-over-proj.js'
 
 /* caching the DOM */
 let LOGO = document.querySelectorAll('.to-reload');
@@ -11,7 +11,7 @@ function pageLoaded(){
 
   logoCliked();
   animateAbout();
-  projectdivAddEvents();
+  //projectdivAddEvents();
 }
 
 /* add event listeners for all logos  */
