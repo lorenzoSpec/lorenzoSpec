@@ -134,7 +134,7 @@ html {
 
 
 /* CONTACT ME STYLE */
-#text-div button {
+#text-div a button{
   background-color: var(--blue);
   color: var(--white);
   font-size: 13px;
@@ -150,7 +150,7 @@ html {
   opacity: 0;
 }
 
-#text-div button:hover {
+#text-div a button:hover {
   transform: scale(1.01);
   background-color: var(--mid-dark-blue);
 }
@@ -263,7 +263,7 @@ html {
     line-height: 90px;
   }
   
-  #text-div button {
+  #text-div a button {
     font-size: 20px;
   }
 
@@ -303,7 +303,7 @@ html {
     line-height: 100px;
   }
   
-  #text-div button {
+  #text-div a button {
     font-size: 20px;
   }
 
@@ -361,7 +361,7 @@ html {
     line-height: 100px;
   }
   
-  #text-div button {
+  #text-div a button {
     font-size: 20px;
   }
 

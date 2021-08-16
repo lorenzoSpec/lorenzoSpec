@@ -24,12 +24,12 @@
     <div id='text-div'>
       <p>Hello I am</p>
       <h1>John Erwin</h1>
-      <button>Contact Me</button>
+      <a href="#footer"><button>Contact Me</button></a>
     </div>
     <div id='nav-in-hero'>
       <a href="#head-section">ABOUT</a>
-      <a href="#">PROJECTS</a>
-      <a href="#">CONTACT</a>
+      <a href="#project">PROJECTS</a>
+      <a href="#footer">CONTACT</a>
     </div>
   </header>
 
@@ -105,14 +105,39 @@
     </div>
   </section>
 
-  <footer>
-    <address>
-      <p id='my-gmail'>john.erwin.lorenzo.2002@gmail.com</p>
+  <footer id='footer'>
+    <img id='ft-work' src="img/work.svg" alt="work (text)">
+
+    <div id='ft-titles'>
+      <h3>Contact Me!</h3>
+      <p>Let's make an awesome work</p>
+    </div>  
+
+    <address id='ft-address'>
+      <span id='ft-span-gmail'>
+        <small>Email: </small>
+        <p id='my-gmail'> john.erwin.lorenzo.2002@gmail.com</p>
+      </span>
+      <span>
+        <small>LinkedIn: </small>
+        <a href="https://ph.linkedin.com/" target="_blank" rel='noreferrer noopener' id='li-link'> <i class="fab fa-linkedin"></i></a>
+      </span>
     </address>
+
+    <div id='ft-div-line-bttop'>
+      <span>
+        <a href="#head-section">
+          <button>Back to top</button>
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </span>
+      <div></div>
+    </div>
+
+    <p id='ft-copyright'>Copyright 2021 | John Erwin Lorenzo</p>
   </footer>
 
   <script src="js/main.js" type="module"></script>
   <script src="js/animation.js" type='module'></script>
-  <script src="js/gmail.js" type="module"></script>
 </body>
 </html>
