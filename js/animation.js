@@ -1,6 +1,6 @@
 const GREETINGS = document.querySelector('#text-div p');
 const NAME = document.querySelector('#text-div h1');
-const CONTACTME = document.querySelector('#text-div button');
+const CONTACTME = document.querySelector('#text-div a button');
 const LOGOHERO = document.getElementById('je-logo');
 const NAV = document.getElementById('nav-in-hero');
 const CREATIVTEXT = document.getElementById('creative-bg');

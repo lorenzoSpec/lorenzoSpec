@@ -1,3 +1,207 @@
-#my-gmail {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #001A38;
+  --mid-dark-blue: #00224E;
+  --blue: #003367;
+  --black-blue: #171D20;
+  --nice-gray: #1E2529;
+  --gray: #2F3133;
+  --white: #E4E4E4; 
+}
+
+#footer {
+  background-color: var(--nice-gray);
+  min-width: 360px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+#ft-work {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-20%);
+}
+
+#ft-titles, #ft-address {
+  margin-left: 10vw;
+}
+
+#ft-titles {
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+  opacity: 0.5;
+}
+
+#ft-titles h3 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+#ft-titles p {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+#ft-address {
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+#ft-address span {
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items:center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+#ft-address span small {
+  margin-right: 5px;
+}
+
+#li-link {
+  color: #FFFFFF;
+  font-size: 25px;
   cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+#li-link:hover {
+  transform: scale(1.03);
+}
+
+#ft-div-line-bttop {
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+#ft-div-line-bttop div {
+  background-color:var(--blue);
+  width: 100%;
+  height: 10px;
+}
+
+#ft-div-line-bttop span {
+  width: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 20px 10px 0; 
+  transition: all 0.2s linear;
+}
+
+#ft-div-line-bttop span button {
+  background: transparent;
+  color: var(--white);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#ft-div-line-bttop span i {
+  color: var(--white);
+  margin-top: 10px;
+}
+
+#ft-div-line-bttop span:hover {
+  transform: scale(1.03);
+}
+
+#ft-copyright {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 20px auto;
+  opacity: 0.5;
+}
+
+/* TABLET SIZE */
+@media (min-width: 601px) and (max-width: 1279px) {
+
+  #ft-titles h3 {
+    font-size: 40px;
+    line-height: 26px;
+  }
+  
+  #ft-titles p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #ft-address span {
+    font-size: 20px;
+  }
+
+  #li-link {
+    font-size: 30px;
+  }
+
+  #ft-work {
+    width: 300px;
+  }
+}
+
+/* DESKTOIP SCREEN */
+@media (min-width: 1280px) and (max-width: 1920px) {
+
+  #ft-titles h3 {
+    font-size: 40px;
+    line-height: 26px;
+  }
+  
+  #ft-titles p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #ft-address span {
+    font-size: 20px;
+  }
+
+  #li-link {
+    font-size: 30px;
+  }
+
+  #ft-work {
+    width: 400px;
+  }
+}
+
+/*  4K   */
+@media (min-width: 1921px) {
+  #footer {
+    min-width: 1921px;
+    max-width: 1921px;
+  }
 }

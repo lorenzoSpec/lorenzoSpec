@@ -71,7 +71,7 @@
 
 
 #proj-container {
-  width: 90vw;
+  width: 90%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -81,7 +81,7 @@
 }
 
 .project-div-indv {
-  width: 90vw;
+  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -148,7 +148,7 @@
   }
 
   .project-div-indv {
-    width: 80vw;
+    width: 80%;
   }
 
 }
@@ -165,7 +165,7 @@
   }
 
   .project-div-indv {
-    width: 40vw;
+    width: 40%;
   }
 }
 
