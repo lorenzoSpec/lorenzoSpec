@@ -1,6 +1,5 @@
 import { animateAbout } from './animation.js';
-//import { projectdivAddEvents } from './hover-over-proj.js'
-
+import { appearDisappearanceNav } from './navigation.js'
 /* caching the DOM */
 let LOGO = document.querySelectorAll('.to-reload');
 
@@ -11,7 +10,7 @@ function pageLoaded(){
 
   logoCliked();
   animateAbout();
-  //projectdivAddEvents();
+  appearDisappearanceNav();
 }
 
 /* add event listeners for all logos  */

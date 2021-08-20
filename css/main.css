@@ -80,6 +80,8 @@ html {
 }
 
 
+
+
 /*  GREETINGS STYLE */
 #text-div p {
   color: var(--white);
@@ -166,12 +168,23 @@ html {
 }
 
 
+#sticking-bar {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100000;
+  padding: 10px;
+}
+
 /* LOGO STYLE */
 #je-logo {
   width: 40px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
   transition: all 0.1s linear;
   cursor: pointer;
   opacity: 0;
@@ -198,10 +211,7 @@ html {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  right: 20px;
-  top: 50px;
-  transform: rotate(90deg) translate(50%, -500%);
+  transform: rotate(0) translate(0);
   opacity: 0;
 }
 
@@ -212,7 +222,7 @@ html {
   font-weight: normal;
   text-decoration: none;
   margin: 0 8px;
-  opacity: 0.8;
+  opacity: 1;
   transition: all 0.1s linear;
 }
 
@@ -313,7 +323,7 @@ html {
 
   #nav-in-hero {
     top: 60px;
-    transform: rotate(90deg) translate(50%, -450%);
+    transform: rotate(0) translate(0);
   }
   
   #nav-in-hero a {
@@ -331,7 +341,7 @@ html {
 }
 
 
-/*DESKTOP SCREEN*/
+/*4K*/
 @media (min-width: 1921px) {
 
   body {
@@ -369,9 +379,14 @@ html {
     width: 800px;
   }
 
+  #sticking-bar {
+    min-width: 1921px;
+    max-width: 1921px;
+  }
+
   #nav-in-hero {
     top: 60px;
-    transform: rotate(90deg) translate(50%, -450%);
+    transform: rotate(0) translate(0);
   }
   
   #nav-in-hero a {
